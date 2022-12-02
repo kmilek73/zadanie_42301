@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<!-- Stwórz prostą stronę internetową o następującej strukturze:
+
+1. Menu nawigacyjne składające się z elementów:
+- About us
+- Skills
+- Portfolio
+- Contact
+
+Każdy z nich powinien być linkiem odsyłającym do konkretnej sekcji.
+
+2. Sekcja "About us", a w niej:
+- nagłówek
+- przykładowy tekst
+
+3. Sekcja "Skills", a w niej:
+- nagłówek
+- cztery divy z klasą "skill" w każdym nagłówek oraz paragraf
+
+4. Sekcja "Portfolio":
+- nagłówek
+- trzy divy z klasą "portfolio-item" w każdym obrazek
+
+5. Sekcja "Contact":
+- nagłówek będący imieniem i nazwiskiem
+- dane adresowe umieszczone w specjalnym tagu do tego przeznaczonym
+- formularz w którym znajdą się pola: imię, temat i wiadomość. Każdy z nich musi być polem wymaganym. Na końcu przycisk "wyślij".
+
+Przed wykonaniem zadania stwórz repozytorium i rób commit z odpowiednim komentarzem po każdej utworzonej sekcji.
+
+Podeślij link do repozytorium zdalnego, abyśmy mogli sprawdzić zadanie. -->
+
+ <!-- MENU -->
+<nav><h1>MENU</h1><ul>
+    <li><a href="#about_us">About us</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#portfolio">Portfolio</a></li>
+    <li><a href="#contact">Contact</a></li>
+</ul>
+</nav>
+
+<!-- sekcja about us -->
+<section id="about_us">
+    <h2>Nagłówek ABOUT US</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet dolorem possimus atque quo quasi? Commodi aperiam laudantium sequi? Illo voluptates dicta dolores rerum odio eveniet earum consequuntur, inventore harum itaque.</p>
+</section>
+
+<!-- sekcja skills -->
+<section id="skill">
+    <h1>Nagłówek SKILLS</h1>
+    <div class="skill">
+        <h2>Nagłówek</h2>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Adipisci fugit distinctio quaerat suscipit quae sint ea. Unde iure nulla, fugit eligendi officiis nemo modi itaque? Libero dolorum dolorem temporibus consequuntur.</p>
+    </div>
+    <div class="skill">
+        <h2>Nagłówek</h2>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Adipisci fugit distinctio quaerat suscipit quae sint ea. Unde iure nulla, fugit eligendi officiis nemo modi itaque? Libero dolorum dolorem temporibus consequuntur.</p>
+    </div>
+    <div class="skill">
+        <h2>Nagłówek</h2>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Adipisci fugit distinctio quaerat suscipit quae sint ea. Unde iure nulla, fugit eligendi officiis nemo modi itaque? Libero dolorum dolorem temporibus consequuntur.</p>
+    </div>
+    <div class="skill">
+        <h2>Nagłówek</h2>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Adipisci fugit distinctio quaerat suscipit quae sint ea. Unde iure nulla, fugit eligendi officiis nemo modi itaque? Libero dolorum dolorem temporibus consequuntur.</p>
+    </div>
+</section>
+
+
+<!-- SEKCJA PORTFOLIO -->
+<section id="portfolio">
+    <h1>Nagłówek PORTFOLIO</h1>
+    <div class="portfolio-item">
+        <img src="img/obrazek.jpg">
+    </div>
+    <div class="portfolio-item">
+        <img src="img/obrazek.jpg">
+    </div>
+    <div class="portfolio-item">
+        <img src="img/obrazek.jpg">
+    </div>
+    
+</section>
+
+<!-- Contact dane adresowe umieszczone w specjalnym tagu do tego przeznaczonym
+- formularz w którym znajdą się pola: imię, temat i wiadomość. Każdy z nich musi być polem wymaganym. Na końcu przycisk "wyślij"-->
+<section id="contact">
+    <h2>Imię Nazwisko</h2>
+    <address>Wrocław ul. Pretficza 49 tel 607 605417</address>
+    <br>
+    <form action="">
+        <label>Podaj Imię: </label><input type="text" name="imie" required><br><br>
+        <label>Temat: </label><input type="text" name="temat" required><br><br>
+        <label>Wiadomość</label> <textarea name="wiadomosc" required></textarea>
+        <input type="submit" value="Wyślij">
+      </form>  
+</section>
+</body>
+</html>
